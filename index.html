@@ -13,8 +13,8 @@
                 <ul>
                     <li><a href="#my">Sobre mí</a></li>
                     <li> <a href="#skill">Skills</a></li>
-                    <li><a href="#proyecto">Proyectos</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#proyect">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -22,6 +22,7 @@
             <section id="my">
 
             </section>
+
             <section id="skill">
                 <h2>SKILLS</h2>
                 <article>
@@ -58,7 +59,7 @@
                     </ul>
                 </article>
                 <article>
-                    <h3>Software Denvelop</h3>
+                    <h3>Software Denveloper</h3>
                     <ul>
                         <li>
                             <p>MERLIN/MERCURY</p>
@@ -69,22 +70,78 @@
                     </ul>
                 </article>
             </section>
-            <section id="proyecto"></section>
-            <section id="contacto">
+            
+            <section id="proyect"></section>
+
+            <section id="contact">
                 <h2>CONTACTO</h2>
-                <form action=""></form>
+                <form 
+                    action="envio_form.html" 
+                    method="post">
+                        
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input name="name" id="name" type="text" placeholder="Nombre" required>
+                    </div>
+
+                    <div>
+                        <label for="surnames">Apellidos</label>
+                        <input name="surnames" id="surnames" type="text" placeholder="Apellidos" required>
+                    </div>
+
+                    <div>
+                        <label for="phone">Telefono</label>
+                        <input name="phone" id="phone" type="tel" placeholder="Telefono" required>
+                    </div>
+
+
+                    <fieldset>  <!--  Bloque dentro del formulario -->
+                        <legend>¿Como me conociste?</legend>
+        
+                        <label for="unv">Universidad</label>
+                        <input type="radio" id="unv" name="meetMe" value="college">
+        
+                        <label for="Keepcoding">Keepcoding kick-off
+                        </label>           
+                        <input type="radio" id="Keepcoding" name="meetMe" value="Keepcoding">
+        
+                        <label for="school">Colegio</label>
+                        <input type="radio" id="school" name="meetMe" value="school">
+
+                        <label for="git">GitHub</label>
+                        <input type="radio" id="git" name="meetMe" value="github">
+        
+                    </fieldset>     
+                    <label for="phone">Tag de GitHub </label>
+                    <div>
+                        <input 
+                            type="text" 
+                            name="taggit" 
+                            id="taggit" 
+                            pattern="???"
+                        >
+                    </div>
+
+                    <div>
+                        <label for="comment">Descripción</label>
+                        <textarea required  maxlength="180" name="comment" id="comment" cols="30" rows="10">
+                            Escribe aquí tu comentario
+                        </textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+                </form>
             </section>
         </main>
         <footer>
             <p>Enric Pina Navarro®. Todos los derechos reservados 2022</p> 
             <div>
-                <a href="www.linkedin.com/in/enrique-pina-76883838" target="_blank">Linkedin</a> 
+                <a href="www.linkedin.com/in/enrique-pina-76883838"     target="_blank" rel="noopener noreferrer" title="Enlace a la red social Linkedin">Linkedin</a> 
             </div>
             <div>
-                <a href="https://instagram.com/enrik_pina?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://instagram.com/enrik_pina?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" title="Enlace a la red social Instagram">Instagram</a>
             <div> 
             <div>
-                <a href="https://github.com/epina87?tab=repositories&q=&type=public&language=&sort=" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/epina87?tab=repositories&q=&type=public&language=&sort=" target="_blank" rel="noopener noreferrer" title="Enlace al perfil de GitHub">GitHub</a>
             <div>           
             
         </footer>

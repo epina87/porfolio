@@ -1,0 +1,124 @@
+/*header*/
+
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h1{
+    font-weight: bold;    
+}
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;  
+    font-size: 1.2rem;
+}
+
+
+
+.navbar ul li a{
+    margin-left: 20px;
+    text-decoration: none;  
+    color : var(--text-color-light );
+
+}
+
+
+/*Menu desplegable*/
+
+nav label{
+    border-top: 3px solid var(--text-color-light );; /*Añadimos borde al contenedor*/
+    background-color: transparent; /*Añadimos color de fondo transparente*/
+    height: 7px; /*Marcamos el alto con 7px*/
+    width: 48px; /*Marcamos el ancho de 48px*/
+    margin-right: 10px; /*Añadimos margen derecha de 10px*/
+}
+
+nav input{
+    display:none; /*Quitamos la visualización  del contenedor*/
+}
+
+.menu1{
+    position: absolute; /*Marcamos el contenedor con una posición absoluta*/
+    top: 20px; /*Marcamos la posición superior de 50px*/
+    right: 10px; /*Marcamos la posición derecha de 10px*/
+    width:30px;   /*Marcamos el ancho de 30px*/
+}
+
+.menu2{
+    position: absolute; /*Marcamos el contenedor con una posición absoluta*/
+    top: 30px; /*Marcamos la posición superior de 60px*/
+    right: 10px; /*Marcamos la posición derecha de 10px*/
+    width:30px;  /*Marcamos el ancho de 30px*/
+} 
+
+.menu3{
+    position: absolute; /*Marcamos el contenedor con una posición absoluta*/
+    top: 40px; /*Marcamos la posición superior de 70px*/
+    right: 10px; /*Marcamos la posición derecha de 10px*/
+    width:30px;  /*Marcamos el ancho de 30px*/
+}
+
+nav input:checked ~ .menu1{    
+    transform: translateY(13px) translateX(-4px) rotate(135deg); /*Aplicamos rotacion de la linea para transformarla en la cruz*/
+}
+
+nav input:checked ~ .menu2{    
+    transform: scale(0); /*Quitamos la linea*/
+}
+
+nav input:checked ~ .menu3{    
+    transform: translateY(-7px) rotate(-135deg); /*Aplicamos rotacion de la linea para transformarla en la cruz*/
+}
+
+/*Lista del menu*/
+nav ul{
+    display:none;/*Quitamos la visualización  del contenedor*/ 
+}
+nav input:checked  ~ ul{  
+    display:block; /*Aplicamos método block al contenedor*/
+    text-align: center; /*Centramos el texto de forma horizontal*/
+    margin: 0;/*Quitamos el margen*/
+    padding: 0; /*Quitamos espacio interno*/
+    padding-top: 20px; /*Añadimos espacio interno superior de 20px*/ 
+
+    position: absolute; /*Marcamos el contenedor con una posición absoluta*/
+    top: 40px; /*Marcamos la posición superior de 70px*/
+    right: 10px; /*Marcamos la posición derecha de 10px*/
+    
+} 
+
+
+
+@media screen and (min-width: 768px) {
+  nav label{
+    display:none; /*Quitamos la visualización  del contenedor*/
+  }
+
+  .navbar ul{
+    display: flex ;
+    }
+
+    nav input:checked  ~ ul{     
+        position: initial; /*Marcamos el contenedor con una posición absoluta*/
+        display: flex ;
+        
+    } 
+
+    .navbar ul li a{
+        margin-left: 20px;
+        text-decoration: none;  
+        color : var(--text-color-dark );
+    }
+
+}

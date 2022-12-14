@@ -4,12 +4,42 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Prfolio</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
     </head>
     <body>
         <header>
-            <h1> Enric Pina Navarro</h1>
-            <nav>
+            <picture>
+                <source
+                  media="(min-width: 576px)"
+                  srcset="
+                    img/header/header_large/header_large_w_1200.jpg 1200w,
+                    img/header/header_large/header_large_w_724.jpg 724w
+                    "
+                >
+                <source
+                  media="(max-width: 576px)"
+                  srcset="
+                    img/header/header_small/header_small_w_600.jpg 600w,                   
+                    img/header/header_small/header_small_w_190.jpg 190w
+                  "
+                >
+                <img src="img/header/header.jpg" alt="fondo cabecera programador">
+            </picture>
+
+                       
+            <nav class="navbar">
+                <h1> Enric Pina Navarro</h1>
+
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu1"></label>
+                <label for="menu" class="menu2"></label> 
+                <label for="menu" class="menu3"></label> 
+
                 <ul>
                     <li><a href="#my">Sobre mí</a></li>
                     <li> <a href="#skill">Skills</a></li>
@@ -18,26 +48,50 @@
                 </ul>
             </nav>
         </header>
+
         <main>
             <section id="my">
+                <ul>
+                    <li>
+                        Desarrollador de software con experiencia en diseño, instalación, pruebas y mantenimiento de sistemas de software. 
+                    </li>
+                    <li>
+                        Dominio de varias plataformas, lenguajes y sistemas integrados.
+                    </li>
+                    <li>
+                        Experiencia en las herramientas y procedimientos de desarrollo más vanguardistas. 
+                    </li>
+                    <li>
+                        Codificación eficaz de cambios y alteraciones de software en base a especificaciones de diseño concretas.
+                    </li>
+                    <li>
+                        Capaz de autogestión eficaz en proyectos independientes. 
+                    </li>
+                    <li>
+                        Buenas habilidades de colaboración dentro de un equipo productivo.
+                    </li>
+                </ul>
 
             </section>
 
             <section id="skill">
                 <h2>SKILLS</h2>
                 <article>
-                    <H3>Front end</H3>
+                    <h3>Front end</h3>
                     <ul>
-                        <li>
+                        <li class="html">
                             <p>HTML</p>
+                            <div class="progress-bar-space">
+                                <div class="progress-bar-value"></div>
+                            </div>
                         </li>
-                        <li>
+                        <li class="css">
                             <p>CSS</p>
                         </li>
-                        <li>
+                        <li class="js">
                             <p>Js</p>
                         </li>
-                        <li>
+                        <li class="react">
                             <p>REACT</p>
                         </li>                       
                     </ul>
@@ -47,31 +101,59 @@
                 <article>
                     <h3>Back end</h3>
                     <ul>
-                        <li>
+                        <li class="python">
                             <p>PYTHON</p> 
+                            <div class="progress-bar"></div>
                         </li>
-                        <li>
+                        <li class="node">
                             <p>NODEJS</p>
                         </li>
-                        <li>
-                            <p> DATABASE SQL </p>
+                        <li class="sql">
+                            <p> DB-SQL </p>
                         </li>
                     </ul>
                 </article>
                 <article>
                     <h3>Software Denveloper</h3>
                     <ul>
-                        <li>
+                        <li class="merlin">
                             <p>MERLIN/MERCURY</p>
                         </li>                       
-                        <li>
-                            <p>UNITY 3D</p>
+                        <li class="unity">
+                            <p>UNITY-3D</p>
                         </li>                      
                     </ul>
                 </article>
             </section>
             
-            <section id="proyect"></section>
+            <section id="proyect">
+                <h2> PROYECTOS</h2>
+                <article>
+                    <h3>Registro Criptomonedas</h3>
+                    <h4>Python + Flask + Javascrip + SQLite3</h4>
+                    <a href="https://github.com/epina87/registro_movimientos_criptomonedas.git" target="_blank" rel="noopener noreferrer" title="Enlace Registro Criptomonedas de GitHub">Ver en GitHub</a>
+                </article>
+
+                <article>
+                    <h3>Ping Pong Games</h3>
+                    <h4>Pygame(Python)</h4>
+                    <a href="https://github.com/epina87/Ping_Pong_Game.git" target="_blank" rel="noopener noreferrer" title="Enlace Ping Pong Games de GitHub">Ver en GitHub</a>
+                </article>
+                <article>
+                    <h3>Web Café Oslo</h3>
+                    <h4>HTML + CSS</h4>
+                    <a href="https://github.com/epina87/Web_Oslo.git" target="_blank" rel="noopener noreferrer" title="Enlace Web Café Oslo de GitHub">Ver en GitHub</a>
+                    <a href="https://epina87.github.io/Web_Oslo/" target="_blank" rel="noopener noreferrer" title="Enlace Web Café Oslo de GitHub page">Ver Web</a>
+                </article>
+                <article>
+                    <h3>Web Desing</h3>
+                    <h4>HTML + CSS</h4>
+                    <a href="https://github.com/epina87/Web-Desing.git" target="_blank" rel="noopener noreferrer" title="Enlace Web Desing de GitHub">Ver en GitHub</a>
+                    <a href="https://epina87.github.io/Web-Desing/" target="_blank" rel="noopener noreferrer" title="Enlace Web Desing de GitHub page">Ver Web</a>
+                </article>
+
+                
+            </section>
 
             <section id="contact">
                 <h2>CONTACTO</h2>
@@ -118,7 +200,7 @@
                             type="text" 
                             name="taggit" 
                             id="taggit" 
-                            pattern="???"
+                            pattern="^@[^\s]+"
                         >
                     </div>
 
@@ -132,6 +214,7 @@
                 </form>
             </section>
         </main>
+
         <footer>
             <p>Enric Pina Navarro®. Todos los derechos reservados 2022</p> 
             <div>
@@ -143,7 +226,7 @@
             <div>
                 <a href="https://github.com/epina87?tab=repositories&q=&type=public&language=&sort=" target="_blank" rel="noopener noreferrer" title="Enlace al perfil de GitHub">GitHub</a>
             <div>           
-            
+            <p>Enric Pina Navarro®. Todos los derechos reservados 2022</p> 
         </footer>
     </body>
 </html>

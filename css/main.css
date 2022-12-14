@@ -1,0 +1,121 @@
+/* Section "my"*/
+
+#my{
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(/img/my.jpg);/*Añadimos imagen fondo*/  
+    text-align: center;
+    color : var(--text-color-light );
+    padding: 20px 10px;
+    background-size:cover;/*Dimensionamos la imagen al espacio total*/
+    background-position: center 50%;/*Posicionamos del fondo*/
+    margin-bottom: 20px;
+}
+
+#my p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/*Section "Skils"*/
+
+#skill{
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px 25px 25px; 
+}
+
+#skill article{
+    display: flex;
+    flex-direction: column;  
+    /* justify-content: space-between;
+    align-items: center; */
+    padding: 25px;  
+    font-size: 1.2rem;
+}
+#skill > h2{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#skill h3{
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid var(--text-color-dark );
+    margin-bottom: 10px;
+}
+
+#skill  ul{
+    margin-left: 50px;
+}
+
+
+
+/*Skills background*/
+
+#skill  ul li{
+    position: relative;
+    margin: 10px;
+}
+#skill  ul li:before{
+    /* list-style-image: url(/img/skills_logo/html.jpg); */
+    content: '';
+    width: 1.1em;
+    height: 1.1em;
+    
+    background-size: cover;
+
+    position: absolute;
+    left: -30px;    
+}
+
+.html:before{
+    background-image: url('/img/skills_logo/html.jpg');
+}
+
+.css:before{
+    background-image: url('/img/skills_logo/css.png');
+}
+.js:before{
+    background-image: url('/img/skills_logo/js.png');
+}
+.react:before{
+    background-image: url('/img/skills_logo/react.png');
+}
+.python:before{
+    background-image: url('/img/skills_logo/python.png');
+}
+.node:before{
+    background-image: url('/img/skills_logo/node.png');
+}
+.sql:before{
+    background-image: url('/img/skills_logo/sql.png');
+}
+.merlin:before{
+    background-image: url('/img/skills_logo/merlin.png');
+}
+.unity:before{
+    background-image: url('/img/skills_logo/unity.png');
+}
+
+
+.progress-bar-space{
+    height: 20px;
+    width: 300px;
+    background-color: lightgray;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+
+
+/*Media Queries*/
+
+@media screen and (min-width: 608px) {
+
+    #my{
+        padding: 40px 10px; 
+        /* background-size:contain;
+        background-repeat: no-repeat; */
+    }
+    
+}

@@ -5,17 +5,6 @@ header{
     flex-direction: column;
 }
 
-
-img{
-    width: 100%;
-    height: auto;
-}
-
-h1{
-    font-weight: bold;    
-}
-
-
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -37,7 +26,7 @@ h1{
 /*Menu desplegable*/
 
 nav label{
-    border-top: 3px solid var(--text-color-light );; /*Añadimos borde al contenedor*/
+    border-top: 3px solid var(--text-color-light ); /*Añadimos borde al contenedor*/
     background-color: transparent; /*Añadimos color de fondo transparente*/
     height: 7px; /*Marcamos el alto con 7px*/
     width: 48px; /*Marcamos el ancho de 48px*/
@@ -98,6 +87,12 @@ nav input:checked  ~ ul{
     
 } 
 
+nav ul li a:hover{
+    opacity: .6;
+    font-size: 1.3rem;
+    text-shadow: black 0.1em 0.1em 0.2em; 
+    transition: font-size 200ms linear, opacity .3s ease-out,text-shadow 200ms linear;    
+}
 
 
 @media screen and (min-width: 768px) {

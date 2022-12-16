@@ -1,0 +1,72 @@
+/* --------------*/
+/*Footer*/
+/* --------------*/
+
+body > footer{
+    background-image: url(/img/footer.jpg);
+    background-size:cover;
+
+
+}
+
+
+body > footer p{
+    color: var(--color-rgb-orange);
+    margin: 20px 10px;
+    font-size: 1.3vw;
+  }
+
+/* --------------*/
+/*Section "rrs"*/
+/* --------------*/
+
+.rrss ul{
+    display: flex;   
+    justify-content:center;
+    padding: 10px 35px; 
+
+  }
+
+  .rrss ul li{
+ 
+    margin: 5px;
+    width: 6.5vw; 
+    text-align: center; 
+  }
+
+  .rrss ul li a{
+
+    border-radius: 50%; 
+    color: var(--text-color-light );
+
+    display: block; 
+  
+    color: #FFFFFF;  
+    line-height: 6.5vw; 
+    font-size: 3.5vw;
+    border-radius: 50%; 
+  }
+
+  .rrss ul li:nth-child(1) a{
+    background-color:  #007bb5;
+  }
+
+  .rrss ul li:nth-child(2) a{
+    background-color:  #125688;
+  }  
+
+  .rrss ul li:nth-child(3) a{
+    background-color:  rgb(20, 19, 19);
+  }
+
+  .rrss ul li a:hover{
+    color: #dcb566; 
+    opacity: 70%; 
+    transition:  opacity .3s ease-out;    
+  }
+
+
+
+
+
+  

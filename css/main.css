@@ -30,22 +30,28 @@
 }
 
 /* --------------*/
-/*Section "Skils"*/
+/*main general*/
 /* --------------*/
 
-#skill{
+#skill, #contact{
     display: flex;
     flex-direction: column;
     padding: 0 25px 25px 25px; 
 }
 
-#skill article{
+/* --------------*/
+/*Section "Skils"*/
+/* --------------*/
+
+
+
+#skill article, #contact form {
     display: flex;
     flex-direction: column;  
     /* justify-content: space-between;
     align-items: center; */
-    padding: 25px;  
-    font-size: 1.2rem;
+    padding-top: 25px;  
+    
 }
 
 
@@ -57,33 +63,33 @@
 }
 
 #skill  ul{
-    margin-left: 50px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
 }
 
-
+#skill li>p{
+    font-size: 0.9rem;
+}
 
 /*Skills background*/
 
-/* #skill{
-    border-bottom: 1px solid var(--text-color-dark );
-} */
+
 
 #skill  ul li{
     position: relative;
-    margin: 15px;
+    margin: 0 15px;
 }
 #skill  ul li:before{
     /* list-style-image: url(/img/skills_logo/html.jpg); */
     content: '';
-    width: 1.1em;
-    height: 1.1em;
+    width: 1.8rem;
+    height: 1.8rem;
     
     background-size: cover;
 
     position: absolute;
-    left: -30px;    
+    left: -40px;    
 }
 
 .html:before{
@@ -130,22 +136,22 @@
     height: 20px;  
     width: 70%; 
     border-radius: 5px;
-    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 70%, rgb(222, 97, 19) 100%);
+    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 70%, var(--color-rgb-orange ) 100%);
     animation: progressbar 1s ease-in-out;
 }
 .merlin .progress-bar-value{
     width: 100%;  
-    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 50%, rgb(222, 97, 19) 100%);
+    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 50%, var(--color-rgb-orange ) 100%);
 }
 
 .html .progress-bar-value, .python .progress-bar-value{
     width: 70%;  
-    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 90%, rgb(222, 97, 19) 100%);   
+    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 90%, var(--color-rgb-orange ) 100%);   
 }
 
 .css .progress-bar-value{
     width: 60%;  
-    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 90%, rgb(222, 97, 19) 100%);   
+    background:linear-gradient(90deg, rgb(13, 97, 6) 0%, rgb(181, 157, 24) 90%, var(--color-rgb-orange ) 100%);   
 }
 
 .js .progress-bar-value, .sql .progress-bar-value {
@@ -175,245 +181,55 @@
 }
 
 
-
 /* --------------*/
-/*Section "Proyect"*/
+/*Section "Contact"*/
 /* --------------*/
+ 
+fieldset > legend{ 
+    font-size: 1.2rem; 
+    padding: 10px; 
+  }
+  
 
-
-#proyect{
-    background-color: var(--text-color-dark );
-    opacity: 0.8;
-    color: var(--text-color-light );
-    padding: 20px;
-}
-
-.carousel-link{
-    display: flex;
-    justify-content: center;
-    padding: 20px;
+button{
+    background-color:var(--text-color-dark ); 
+    color:  var(--text-color-light );
+    width: 20vw;  
+    height: 5%; 
+    font-size: 0.9em; 
+    margin-top: 10px; /*Añadimos margen superior de 10px*/
+  }
+  
+  button:hover{  
+    background-color: #aaaaaa; /*Añadimos color de fondo*/
+  }
+  
+  input,textarea {
     
-}
+    border: 1px solid var(--text-color-light ); 
+    margin-left:  25px;
+    margin-bottom: 25px;
+    box-shadow: 0 0 5px 1px var(--text-color-dark );
 
-.carousel-link .carousel-dot{
-    background-color: var(--text-color-light );
-
-
-    width: 16px;
-    height: 16px;
+  }
+  
+  label{
+    font-size: 0.9rem;
     display: block;
-    border: 1px solid  rgb(222, 97, 19);
-    border-radius: 50%;
-    margin: 0 5px;
-}
-.carousel-container{
-    margin-top: 20px;
-}
-
-.carrosel-slides{
-    height: 30vh;
-    display: flex;
-    flex-direction:column;/*cambio a posicion columna*/
-    flex-wrap: wrap;
-    overflow: hidden;/*quitar el scroll*/
-    scroll-behavior: smooth; /*Scroll suavizado*/
-    margin:  0 20px;
-    
-}
-
-.carrosel-slides > div{
-    background-color: var(--text-color-light );
-    color: rgb(255,255,255);
-    height: 100%;
-    width: 100%; 
-    padding: 10px 0 ;  
-    color: var(--text-color-dark );
-
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 15% 1fr 20%;
-    grid-template-areas: 
-      "header"
-      "article"
-      "footer"
-
-    ;        
-}
-
-.header_slide{
-    grid-area: header; 
-    display: grid;
-    grid-template-columns: 15% 1fr;
-    grid-template-rows: 1fr;
-}
-
-.header_slide >picture{
-    height: 20%;
-}  
-
-
-.header_slide img{
-    width: 5vw;
-    height: 5vw;
-    margin-left: 30px;
-}
-
-.logo_slide1 img{
-    width: 30vw;
-    height: 7vw;
-    margin-left: 30px;
-}
-
-
-.item_slide2, .item_slide1{
-    grid-area: article;   
-
-
-    display: grid;
-    grid-template-columns: 20% 1fr;
-    grid-template-rows: 1fr;
-}
-
-
-.item_slide1 div{
-    grid-column: 1/2;
-    grid-row: 1;
-}
-
-.item_slide1 .logo  {
-    height: 7vw;   
-    width: 7vw;
-    margin-left: 30px;
-
-}
-
-.item_slide1 img{
-    height: 30vw;   
-    width: 50vw;
-
-    grid-column: 2/3;
-    grid-row: 1;
-
-}
-
-.item_slide2 video{
-    height: 30vw;   
-    width: 50vw;
-
-    grid-column: 2/3;
-    grid-row: 1;
-}
-
-.item_slide2 img{
-    height: 10vw;   
-    width: 10vw;
-    margin-left: 30px;
-
-    grid-column: 1/2;
-    grid-row: 1;
-}
-
-
-
-.footer_slide2, .footer_slide3, .footer_slide4 {
-    grid-area: footer; 
-    display: grid;
-    grid-template-columns: 40% 1fr;
-    grid-template-rows: 1fr;
-    
-}
-
-
-
-
-.footer_slide2 img{
-    width: 20vw;
-    height: 10vw; 
-}
-
-.footer_slide3 img, .footer_slide4 img{
-    width: 6.2vw;
-    height: 7.0vw;
-    padding-bottom: 5px;  
-}
-
-.description_proyect{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px 0  10px;
-}
-
-.description_proyect a{
-    font-size: 1.2vw;
-}
-
-
-.links{
-    display: flex;
-    justify-content: right;
-    padding: 5px 20px;
-}
-
-
-
-
-.links a{
-    /* width: 10vw;
-    height: 10vw; */
-    padding-left: 20px;   
-}
-
-.fa-github{
-    width: 300px;
-    height: 10vw;
-
-}
-
-#slide4 .item_slide picture img, #slide3 .item_slide picture img{
-    height: 18vh;
-}
-
-
-
-
-#proyect h3{
-    font-size: 2.2vw;
-}
-
-#proyect h4{
-     font-size: 1.8vw; 
-}
-
-
-
-
-@media screen and (min-width: 480px) {
-    .carrosel-slides, #slide4 .item_slide picture img, #slide3 .item_slide picture img{
-        height: 50vh;
-        
-    }
-  }
-
-@media screen and (min-width: 768px) {
-    .carrosel-slides{
-        height: 100vh;
-        
-    }
-
-
-
-    .header_slide div{
-        width: 5vh;
-        height: 5vh;
-    
-        background-size: cover;
-        
-    }
-
-
+    margin-bottom: 5px;
   }
 
 
+  
+  textarea{
+    width: 80%; /*Marcamos el ancho de 80%*/
+    height: 150px; /*Marcamos el alto con 150px*/
+    margin-top: 10px; /*Añadimos margen superior de 10px*/
+  }
+  
 
-
+  @media screen and (min-width: 410px) {
+    fieldset label{
+        display: inline;
+      }
+  }

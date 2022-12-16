@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/header.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/carousel.css">
         <link rel="stylesheet" href="css/footer.css">
         <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"><!--Añadimos set de iconos -->
     </head>
@@ -18,18 +19,18 @@
                 <source
                   media="(min-width: 576px)"
                   srcset="
-                    ./img/header/header_large/header_large_w_1200.jpg 1200w,
-                    ./img/header/header_large/header_large_w_724.jpg 724w
+                    img/header/header_large/header_large_w_1200.jpg 1200w,
+                    img/header/header_large/header_large_w_724.jpg 724w
                     "
                 >
                 <source
                   media="(max-width: 576px)"
                   srcset="
-                    ./img/header/header_small/header_small_w_600.jpg 600w,                   
-                    ./img/header/header_small/header_small_w_190.jpg 190w
+                    img/header/header_small/header_small_w_600.jpg 600w,                   
+                    img/header/header_small/header_small_w_190.jpg 190w
                   "
                 >
-                <img src="./img/header/header.jpg" alt="fondo cabecera programador">
+                <img src="img/header/header.jpg" alt="fondo cabecera programador">
             </picture>
 
                        
@@ -83,7 +84,7 @@
                         <li class="html">
                             <p>HTML</p>
                             <div class="progress-bar-space">
-                                <div class="progress-bar-value"></div>
+                            <div class="progress-bar-value"></div>
                             </div>
                         </li>
                         <li class="css">
@@ -209,6 +210,7 @@
 
 
                         </div>
+
                         <div id="slide2">
                             <header class="header_slide">
                                 <div class="logo_slide">
@@ -249,10 +251,6 @@
                                 </div>                        
                             </footer>                       
                         </div>
-
-                        
-
-
 
                         <div id="slide3">
                             <header class="header_slide">
@@ -424,16 +422,26 @@
         </main>
 
         <footer>
-            <p>Enric Pina Navarro®. Todos los derechos reservados 2022</p> 
-            <div>
-                <a href="www.linkedin.com/in/enrique-pina-76883838"     target="_blank" rel="noopener noreferrer" title="Enlace a la red social Linkedin">Linkedin</a> 
-            </div>
-            <div>
-                <a href="https://instagram.com/enrik_pina?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" title="Enlace a la red social Instagram">Instagram</a>
-            <div> 
-            <div>
-                <a href="https://github.com/epina87?tab=repositories&q=&type=public&language=&sort=" target="_blank" rel="noopener noreferrer" title="Enlace al perfil de GitHub">GitHub</a>
-            <div>           
+            <section class="rrss">
+                <ul>
+                    <li>
+                        
+                        <a href="www.linkedin.com/in/enrique-pina-76883838"     target="_blank" rel="noopener noreferrer" title="Enlace a la red social Linkedin">
+                            <i class="fa fa-linkedin"></i></a> 
+                    
+                    </li>
+                    <li>
+                        <a href="https://instagram.com/enrik_pina?igshid=YmMyMTA2M2Y=" target="_blank" rel="noopener noreferrer" title="Enlace a la red social Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li> 
+                    <li>
+                        <a href="https://github.com/epina87?tab=repositories&q=&type=public&language=&sort=" target="_blank" rel="noopener noreferrer" title="Enlace al perfil de GitHub">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    <div> 
+                </ul>                  
+            </section>
             <p>Enric Pina Navarro®. Todos los derechos reservados 2022</p> 
         </footer>
     </body>

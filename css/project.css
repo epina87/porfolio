@@ -153,7 +153,7 @@ article h3{
 
 article img{
     width: 4.8em;
-    height:1.2em;
+    height:1.6em;
 }
 
 .nom_proyect{
@@ -184,9 +184,7 @@ article img{
     grid-column: 1/2;
     grid-row: 4/5;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 }
 
 .logo, .nom_project .logo {
@@ -201,7 +199,7 @@ article img{
     width: 20%;
     margin-left: 20px;
 }
-.project_game .img_skills .logo_pygame{
+.project_game .img_skills{
     width: 100%;
   
  
@@ -389,10 +387,6 @@ body > footer .derechos {
 
         .img_project{
             text-align: end;
-        }
-
-        .project_cripto .img_skills {
-            display: inline;
         }
 
         .project_game .nom_project img, .project_oslo .nom_project img, .project_desing .nom_project img {

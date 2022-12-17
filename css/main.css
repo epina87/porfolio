@@ -3,13 +3,16 @@
 /* ------------*/
 
 #my{
-    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(img/my.jpg);/*Añadimos imagen fondo*/  
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url('/img/my.jpg');
+
     text-align: center;
     color : var(--text-color-light );
     padding: 20px 10px;
-    background-size:cover;/*Dimensionamos la imagen al espacio total*/
-    background-position: center 50%;/*Posicionamos del fondo*/
+    background-size:cover;
+    background-position: center 50%;
     margin-bottom: 20px;
+
+
 }
 
 #my p:first-child {
@@ -23,8 +26,7 @@
 
     #my{
         padding: 40px 10px; 
-        /* background-size:contain;
-        background-repeat: no-repeat; */
+
     }
     
 }

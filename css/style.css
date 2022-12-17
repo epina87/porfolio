@@ -13,11 +13,10 @@ body{
     color: var(--text-color-dark );
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.3rem;
-    max-width: 1140px;/*Aplicamos ancho máximo de 1140px*/
-    margin:0 auto;/*Centramos contenido horizontalmente utilizando el margen*/
+    max-width: 1140px;
+    margin:0 auto;
     display: grid;
-    grid-template-columns: 1fr;/*el fr es el espacio que queda*/
-    grid-template-rows: 9% 4fr 3%;
+    grid-template-columns: 1fr;
     grid-template-areas: 
       "header"
       "main"

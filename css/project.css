@@ -4,8 +4,8 @@
 
 
 body{
-    grid-template-rows: 16% 4fr 6%;
-     
+    
+    grid-template-rows: 18% 80% 7%;
 }
 
 /*HEADER*/
@@ -15,7 +15,7 @@ header{
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;  
+    grid-template-rows: 20% 80%;
     
 }
 
@@ -28,7 +28,7 @@ header{
 
 #return h1{
 
-    font-size: 1.8em;
+    font-size: 1.8rem;
 
     display: flex;
     align-items: center;
@@ -37,19 +37,19 @@ header{
 
 #return a{
 
-
+  font-size: 2rem;  
   margin-top: 10px;
 
 }
 
-#video_film{
-
-
-}
 
 video{
     width: 100%;
     height: auto;
+}
+
+header video{
+    height: 200px;
 }
 
 
@@ -60,8 +60,9 @@ main{
     grid-row: 2/3;
 
     display: grid;
+
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
 
 
 
@@ -133,16 +134,18 @@ main{
 /*------------*/
 
 article{
-     /* width: 40%;
-    height: 60vw;  */
+
 
     text-align: center;
     
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 5%,5%,1fr,5%;
 
     border: 1px solid  var(--text-color-dark );
+
+    grid-template-columns: 1fr ;
+    grid-template-rows: 2rem 4rem 10rem 3rem;
+    background-color: aquamarine;
+    font-size: 0.6rem;
 }
 
 article h3{
@@ -163,10 +166,16 @@ article img{
 
 .nom_project img{
     width: 70%;
+    
 }
 
 .nom_project{
-    font-size: 2.1rem;
+    height: 15vw;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 50%; 
+    font-size: 1rem;
+    text-align: center;
 }
 
 .img_project{
@@ -184,12 +193,17 @@ article img{
     grid-column: 1/2;
     grid-row: 4/5;
 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+
 
 }
 
 .logo, .nom_project .logo {
-    width: 3em;
-    height: 3em;
+    width: 1.5rem;
+    height: 1.5rem; 
 
 }
 
@@ -199,13 +213,9 @@ article img{
     width: 20%;
     margin-left: 20px;
 }
-.project_game .img_skills{
-    width: 100%;
-  
- 
-}
 
-/*Project Web*/
+
+
 .project_oslo .nom_project img{
     width: 20%;
     margin-left: 20px;   
@@ -217,7 +227,11 @@ article img{
 }
 
 
-
+.nom_project .links_git a{
+    display: flex;
+    justify-content: right;
+    margin-right: 5px;  
+}
 
 
 /*Footer*/
@@ -241,9 +255,8 @@ body > footer .derechos {
 /*Media Queries*/
 
 @media screen and (min-width: 768px) {
-    body{
-        grid-template-rows: 30% 4fr 6%;
-         
+    body {
+         grid-template-rows: 25% 80% 10%; 
     }
 
     main{
@@ -252,7 +265,10 @@ body > footer .derechos {
 
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+
+        grid-column-gap: 1.5vw;
+        grid-row-gap: 1.5vw ;
     
         }
 
@@ -309,25 +325,26 @@ body > footer .derechos {
             grid-column: 4/5;
             grid-row: 2/3;
         }
+        
+        .nom_project{            
+            grid-template-rows: 25% 25%; 
 
+        }
   
 }
 
 
 @media screen and (min-width: 1024px) {
-    body{
-        grid-template-rows: 35% 1fr 6%;
-         
-    }
+
 
     main{
-
-
         display: grid;
 
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr ; 
 
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-column-gap: 1vw;
+        grid-row-gap: 1vw ;
         
         }
 
@@ -393,5 +410,26 @@ body > footer .derechos {
             width: 35%;
            
         }
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

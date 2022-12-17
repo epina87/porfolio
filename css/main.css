@@ -3,7 +3,7 @@
 /* ------------*/
 
 #my{
-    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(/img/my.jpg);/*Añadimos imagen fondo*/  
+    background-image:linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)),url(img/my.jpg);/*Añadimos imagen fondo*/  
     text-align: center;
     color : var(--text-color-light );
     padding: 20px 10px;
@@ -80,7 +80,6 @@
     margin: 0 15px;
 }
 #skill  ul li:before{
-    /* list-style-image: url(/img/skills_logo/html.jpg); */
     content: '';
     width: 1.8rem;
     height: 1.8rem;
@@ -92,32 +91,32 @@
 }
 
 .html:before{
-    background-image: url('/img/skills_logo/html5.png');
+    background-image: url('img/skills_logo/html5.png');
 }
 
 .css:before{
-    background-image: url('/img/skills_logo/css.png');
+    background-image: url('img/skills_logo/css.png');
 }
 .js:before{
-    background-image: url('/img/skills_logo/js.png');
+    background-image: url('img/skills_logo/js.png');
 }
 .react:before{
-    background-image: url('/img/skills_logo/react.png');
+    background-image: url('img/skills_logo/react.png');
 }
 .python:before{
-    background-image: url('/img/skills_logo/python.png');
+    background-image: url('img/skills_logo/python.png');
 }
 .node:before{
-    background-image: url('/img/skills_logo/node.png');
+    background-image: url('img/skills_logo/node.png');
 }
 .sql:before{
-    background-image: url('/img/skills_logo/sql.png');
+    background-image: url('img/skills_logo/sql.png');
 }
 .merlin:before{
-    background-image: url('/img/skills_logo/merlin.png');
+    background-image: url('img/skills_logo/merlin.png');
 }
 .unity:before{
-    background-image: url('/img/skills_logo/unity.png');
+    background-image: url('img/skills_logo/unity.png');
 }
 
 

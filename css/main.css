@@ -48,8 +48,7 @@
 #skill article, #contact form {
     display: flex;
     flex-direction: column;  
-    /* justify-content: space-between;
-    align-items: center; */
+
     padding-top: 25px;  
     
 }
@@ -164,6 +163,10 @@
     background:linear-gradient(90deg, rgb(13, 97, 6) 0%,rgb(18, 121, 8) 0%);   
 }
 
+
+
+/*Media Queries*/
+
 @keyframes progressbar {
     0% { width: 0%;}
 }
@@ -196,7 +199,7 @@ button{
     color:  var(--text-color-light );
     width: 20vw;  
     height: 5%; 
-    font-size: 0.9em; 
+    font-size: 0.9rem; 
     margin-top: 10px; /*Añadimos margen superior de 10px*/
   }
   
@@ -227,6 +230,9 @@ button{
     margin-top: 10px; /*Añadimos margen superior de 10px*/
   }
   
+
+  
+/*Media Queries*/
 
   @media screen and (min-width: 410px) {
     fieldset label{

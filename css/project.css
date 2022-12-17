@@ -1,0 +1,403 @@
+/* --------------*/
+/*WEB "Project"*/
+/* --------------*/
+
+
+body{
+    grid-template-rows: 16% 4fr 6%;
+     
+}
+
+/*HEADER*/
+header{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;  
+    
+}
+
+#return{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;  
+ 
+}
+
+#return h1{
+
+    font-size: 1.8em;
+
+    display: flex;
+    align-items: center;
+}
+
+
+#return a{
+
+
+  margin-top: 10px;
+
+}
+
+#video_film{
+
+
+}
+
+video{
+    width: 100%;
+    height: auto;
+}
+
+
+/*MAIN*/
+
+main{
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+
+
+
+    grid-column-gap: 3vw;
+    grid-row-gap: 3vw ;
+
+    margin:  20px;
+   
+    }
+
+    .project_cripto {
+        /* background-color: yellow; */
+
+        grid-column: 1/2;  
+        grid-row: 1/2;
+      }
+
+    .project_game {
+        /* background-color: orange; */
+
+        grid-column: 2/3;
+        grid-row: 1/2;
+
+      }
+      .project_oslo {
+        /* background-color: aqua; */
+
+        grid-column: 1/2;
+        grid-row: 2/3;
+      }
+
+      .project_desing {
+        /* background-color: aqua; */
+
+        grid-column: 2/2;
+        grid-row: 2/3;
+      }
+
+      .project_js {
+        /* background-color: blueviolet; */
+
+        grid-column: 1/2;
+        grid-row: 3/4;
+      }
+
+      .project_react{
+        /* background-color: yellow; */
+
+        grid-column: 2/3;  
+        grid-row: 3/4;
+      }
+
+      .project_node {
+        /* background-color: green; */
+
+        grid-column: 1/2;
+        grid-row: 5/4;
+      }
+
+      .project_html{
+        /* background-color: green; */
+
+        grid-column: 2/3;
+        grid-row: 5/4;
+      }
+
+
+
+/*------------*/
+
+article{
+     /* width: 40%;
+    height: 60vw;  */
+
+    text-align: center;
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5%,5%,1fr,5%;
+
+    border: 1px solid  var(--text-color-dark );
+}
+
+article h3{
+    margin-top: 5px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+article img{
+    width: 4.8em;
+    height:1.2em;
+}
+
+.nom_proyect{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.nom_project img{
+    width: 70%;
+}
+
+.nom_project{
+    font-size: 2.1rem;
+}
+
+.img_project{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}
+.img_project img{
+    width: 100%;
+    height: auto;
+
+}
+
+.img_skills{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo, .nom_project .logo {
+    width: 3em;
+    height: 3em;
+
+}
+
+
+
+.project_game .nom_project img, .project_oslo .nom_project img, .project_desing .nom_project img{
+    width: 20%;
+    margin-left: 20px;
+}
+.project_game .img_skills .logo_pygame{
+    width: 100%;
+  
+ 
+}
+
+/*Project Web*/
+.project_oslo .nom_project img{
+    width: 20%;
+    margin-left: 20px;   
+}
+
+.project_oslo .img_project img, .project_desing .img_project img{
+    
+    height: 100%;
+}
+
+
+
+
+
+/*Footer*/
+footer{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+    grid-area: footer;
+}
+
+body > footer .derechos {
+    margin: 0;
+    font-size: 1.3vw;
+    color: var(--color-rgb-orange);
+    margin-left: 20px;
+}
+
+
+
+  
+/*Media Queries*/
+
+@media screen and (min-width: 768px) {
+    body{
+        grid-template-rows: 30% 4fr 6%;
+         
+    }
+
+    main{
+
+        font-size: 15px;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    
+        }
+
+        .project_cripto {
+            grid-column: 1/2;  
+            grid-row: 1/2;
+        }
+
+        .project_game {
+
+
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+        }
+        .project_oslo {
+
+
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .project_desing {
+          
+
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        .project_js {
+
+
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .project_react{
+     
+
+            grid-column: 2/3;  
+            grid-row: 2/3;
+        }
+
+        .project_node {
+          
+
+            grid-column: 3/4;
+            grid-row: 2/3;
+        }
+
+        .project_html{
+   
+
+            grid-column: 4/5;
+            grid-row: 2/3;
+        }
+
+  
+}
+
+
+@media screen and (min-width: 1024px) {
+    body{
+        grid-template-rows: 35% 1fr 6%;
+         
+    }
+
+    main{
+
+
+        display: grid;
+
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+
+        grid-template-rows: 1fr 1fr 1fr; 
+        
+        }
+
+        .project_cripto {
+            grid-column: 1/2;  
+            grid-row: 1/2;
+        }
+
+        .project_game {
+
+
+            grid-column: 2/3;
+            grid-row: 1/2;
+
+        }
+        .project_oslo {
+
+
+            grid-column: 3/4;
+            grid-row: 1/2;
+        }
+
+        .project_desing {
+          
+
+            grid-column: 4/5;
+            grid-row: 1/2;
+        }
+
+        .project_js {
+
+
+            grid-column: 5/6;
+            grid-row: 1/2;
+        }
+
+        .project_react{
+     
+
+            grid-column: 6/7;  
+            grid-row: 1/2;
+        }
+
+        .project_node {
+          
+
+            grid-column: 7/8;
+            grid-row: 1/2;
+        }
+
+        .project_html{
+   
+
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .img_project{
+            text-align: end;
+        }
+
+        .project_cripto .img_skills {
+            display: inline;
+        }
+
+        .project_game .nom_project img, .project_oslo .nom_project img, .project_desing .nom_project img {
+            width: 35%;
+           
+        }
+}
+

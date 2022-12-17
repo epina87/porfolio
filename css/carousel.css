@@ -1,5 +1,5 @@
 /* --------------*/
-/*Section "Proyect"*/
+/*Section "carousel"*/
 /* --------------*/
 
 
@@ -207,6 +207,7 @@
 
 
 
+/*Media Queries*/
 
 @media screen and (min-width: 480px) {
     .carrosel-slides, #slide4 .item_slide picture img, #slide3 .item_slide picture img{

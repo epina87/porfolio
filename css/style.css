@@ -12,7 +12,7 @@ body{
     background-color: var(--text-color-light );
     color: var(--text-color-dark );
     font-family: 'Times New Roman', Times, serif;
-    font-size: 3vw;
+    font-size: 1.3rem;
     max-width: 1140px;/*Aplicamos ancho máximo de 1140px*/
     margin:0 auto;/*Centramos contenido horizontalmente utilizando el margen*/
     display: grid;
@@ -64,10 +64,23 @@ section h3{
 }
 
 
+
+/*Media Queries*/
+
 @media screen and (min-width: 410px) {
   body{
    
-    grid-template-rows: 11% 4fr 4%;
+    grid-template-rows: 13% 4fr 4%;
+  
+  }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+  body{
+   
+    grid-template-rows: 13% 4fr 5%;
   
   }
 

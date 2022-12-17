@@ -11,9 +11,9 @@ body > footer{
 
 
 body > footer p{
-    color: var(--color-rgb-orange);
+    color: var( --color-rgb-orange);
     margin: 20px 10px;
-    font-size: 1.3vw;
+    font-size: 0.6rem;
   }
 
 /* --------------*/
@@ -30,7 +30,7 @@ body > footer p{
   .rrss ul li{
  
     margin: 5px;
-    width: 6.5vw; 
+    width: 2.5rem; 
     text-align: center; 
   }
 
@@ -42,8 +42,8 @@ body > footer p{
     display: block; 
   
     color: #FFFFFF;  
-    line-height: 6.5vw; 
-    font-size: 3.5vw;
+    line-height: 2.5rem; 
+    font-size: 1.5rem;
     border-radius: 50%; 
   }
 

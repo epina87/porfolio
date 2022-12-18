@@ -1,0 +1,27 @@
+/* --------------*/
+/*WEB "Project"*/
+/* --------------*/
+
+
+body{
+    
+    grid-template-rows: 30% 60% 15%;
+}
+
+main{
+    margin: 10px 5px;
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+         grid-template-rows: 25% 80% 10%; 
+    }
+}

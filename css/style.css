@@ -17,6 +17,8 @@ body{
     margin:0 auto;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 9% 4fr 4%;
+
     grid-template-areas: 
       "header"
       "main"
@@ -69,7 +71,7 @@ section h3{
 @media screen and (min-width: 410px) {
   body{
    
-    grid-template-rows: 13% 4fr 4%;
+    grid-template-rows: 14% 4fr 4%;
   
   }
 
@@ -79,7 +81,7 @@ section h3{
 @media screen and (min-width: 1024px) {
   body{
    
-    grid-template-rows: 13% 4fr 5%;
+    grid-template-rows: 15% 4fr 5%;
   
   }
 
